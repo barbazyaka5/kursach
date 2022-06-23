@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <!--кодировка страницы-->
+    <meta charset="utf-8">
+    <!--заголовок страницы-->
+    <title>Пиджаки</title>    
+    <!--подключение стилей css-->
+    <link href='style.css' rel='stylesheet'>
+    
+  </head>
+
+
+  <body>
+    <!--шапка сайта-->
+    <header class='page-header'>
+      
+      <!--логотип и телефон компании-->
+      <div class="logo">
+        <a href="#"><img src='file/log.png' width="40" height="40"></a>
+      </div>
+
+      <!--название магазина-->
+      <h1 class="title">   Магазин <span>Пиджаков</span></h1>
+
+    </header>
+
+
+    <!--навигационный блок-->
+    <ul class="navg">
+		  <li class='navgli'><a class='navga' href="#">Главная</a></li>
+      <li class='navgli'><a class='navga' href="info.html">Консультанты</a></li>
+		  <li class='navgli'><a class='navga' href="pol.html">Информация</a></li>
+	  </ul>
+    <!--простая линия-->
+
+
+    
+    <!--блок слайдера-->
+    <div class="container_slider_css">
+      <img class="photo_slider_css" src="slider/one.jpg" alt="">
+      <img class="photo_slider_css" src="slider/two.jpg" alt="">
+      <img class="photo_slider_css" src="slider/three.jpg" alt="">
+      <img class="photo_slider_css" src="slider/four.jpg" alt="">
+    </div>
+    <!--простая линия-->
+
+    
+    <!--Блок с брендами которые есть в магазине-->
+    <div id='prod'>
+			<h2 class="brands-h2">В нашем магазине все товара представлены эксклюзивного бренда</h2><br>
+			<div class="brands">
+				<div>
+					<img class='amg' src="brend/brand.png" width="250" height="102">
+				</div>
+			</div>
+		</div>
+
+    <!--фильтр товаров-->
+    <h2 class='filr'>Каталог</h2>
+    <div id="myBtnContainer" class='filr'>
+      <button class="btn active" onclick="filterSelection('all')"> Показать все</button>
+      <button class="btn" onclick="filterSelection('mm')"> Мужское</button>
+      <button class="btn" onclick="filterSelection('mj')"> Женское</button>
+    </div>
+
+  
+    <!--Блок с товарами-->
+    <main class="prod container">   
+      <div class="product-item filterDiv mm">
+        <img src="product/p1.jpeg">
+        <div class="product-list">
+          <h3>Apple MacBook Pro16<br> M1 Max/64Gb/4Tb</h3>
+            <span class="price">₽ 16900</span>
+            <a href="" class="button">В корзину</a>
+        </div>
+      </div> 
+      <div class="product-item filterDiv mm">
+        <img src="product/p2.jpeg">
+        <div class="product-list">
+          <h3>Huawei MateBook D16<br> AMD Ryzen 5 3500/16gb/512GB</h3>
+            <span class="price">₽ 12900</span>
+            <a href="" class="button">В корзину</a>
+        </div>
+      </div>    
+      <div class="product-item filterDiv mm">
+        <img src="product/p3.jpeg">
+        <div class="product-list">
+          <h3>MacBook Pro Air <br> M1/8gb/128gb </h3>
+            <span class="price">₽ 12500</span>
+            <a href="" class="button">В корзину</a>
+        </div>
+      </div>    
+      <div class="product-item filterDiv mm">
+        <img src="product/p4.jpeg">
+        <div class="product-list">
+          <h3>Пиджак Дилан - 1 </h3>
+            <span class="price">₽ 18900</span>
+            <a href="" class="button">В корзину</a>
+        </div>
+      </div>
+      <div class="product-item filterDiv mj">
+        <img src="product/p5.jpeg">
+        <div class="product-list">
+          <h3>Пиджак Рени</h3>
+            <span class="price">₽ 12500</span>
+            <a href="" class="button">В корзину</a>
+        </div>
+      </div>    
+      <div class="product-item filterDiv mj">
+        <img src="product/p6.jpeg">
+        <div class="product-list">
+          <h3>Пиджак Дебра</h3>
+            <span class="price">₽ 18590</span>
+            <a href="" class="button">В корзину</a>
+        </div>
+      </div>    
+      <div class="product-item filterDiv mj">
+        <img src="product/p7.jpeg">
+        <div class="product-list">
+          <h3>Пиджак Рени</h3>
+            <span class="price">₽ 14990</span>
+            <a href="" class="button">В корзину</a>
+        </div>
+      </div>    
+      <div class="product-item filterDiv mm">
+        <img src="product/p9.jpeg">
+        <div class="product-list">
+          <h3>Пиджак Даймон </h3>
+            <span class="price">₽ 14690</span>
+            <a href="" class="button">В корзину</a>
+        </div>
+      </div>   
+      <div class="product-item filterDiv mj">
+        <img src="product/p8.jpeg">
+        <div class="product-list">
+          <h3>Пиджак Королина</h3>
+            <span class="price">₽ 13450</span>
+            <a href="" class="button">В корзину</a>
+        </div>
+      </div>   
+      <div class="product-item filterDiv mj">
+        <img src="product/p10.jpeg">
+        <div class="product-list">
+          <h3>Пиджак Кэнди</h3>
+            <span class="price">₽ 16900</span>
+            <a href="" class="button">В корзину</a>
+        </div>
+      </div>    
+      <div class="product-item filterDiv mj">
+        <img src="product/p11.jpeg">
+        <div class="product-list">
+          <h3>Пиджак Каролин</h3>
+            <span class="price">₽ 10900</span>
+            <a href="" class="button">В корзину</a>
+        </div>
+      </div>    
+      <div class="product-item filterDiv mm">
+        <img src="product/p12.jpeg">
+        <div class="product-list">
+          <h3>Пиджак Байрон</h3>
+            <span class="price">₽ 18900</span>
+            <a href="" class="button">В корзину</a>
+        </div>
+      </div>
+      
+      
+      
+      <!--подключаем javascript для фильтра-->
+    <script src="filtr.js"></script>
+    </main>  
+
+      <br><br><br><br><br><br><br>
+
+    <!--подвал сайта-->
+    <footer class='pod'>
+      <div>
+        <span>В нашем магазине вы можете приобрести разного<br> бренда, вида пиджаков </span><br><br>
+        <span>Мы находимся в Москве</span><br><br>
+        <span>magazinepidjakov@mail.ru</span><br><br>
+
+      </div>
+        <div class='mail'>            
+            <h3>Подписка на новости</h3>
+            <p>
+               При оформлении Email рассылки вы будете получать<br> информацию о новинках нашего магазина
+            </p>
+            <div style="display: none;"></div>
+            <form>
+                <div>
+                    <input type="text" placeholder="Введите e-mail">
+                    <input type="submit" value="Подписаться">
+                </div>
+            </form>
+        </div>
+        <div class='mail'>            
+          <h3>Заказать обратный звонок</h3>
+          <p>
+             При заказе обратного звонка наш консультант<br> вам позвонит и поможет подобрать вам наряд
+          </p>
+          <div style="display: none;"></div>
+          <form>
+              <div>
+                  <input type="text" placeholder="Введите телефон">
+                  <input type="submit" value="Заказать">
+              </div>
+          </form>
+      </div>
+      </div>
+    </footer>
+    
+    <!--кнопка наверх-->
+    <a href="#" title="Вернуться к началу страницы" class="topNubex">Наверх<width="45p" height="45px"></a>
+  </body>
+</html>
+
+
